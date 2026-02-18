@@ -1,4 +1,7 @@
+'use client'
+
 import { projects } from '@/data/projects'
+import FadeIn from '@/components/ui/FadeIn'
 
 export default function Projects() {
   return (
@@ -9,101 +12,97 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto">
 
         {/* Header */}
-        <div className="flex items-center gap-3 mb-6">
-          <div className="w-8 h-px bg-blue-400" />
-          <span className="text-blue-400 text-sm font-medium tracking-wider uppercase">
-            Projekte
-          </span>
-        </div>
+        <FadeIn>
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-8 h-px bg-blue-400" />
+            <span className="text-blue-400 text-sm font-medium tracking-wider uppercase">
+              Projekte
+            </span>
+          </div>
+        </FadeIn>
 
-        <div className="flex flex-wrap items-end justify-between gap-4 mb-16">
-          <h2 className="text-4xl font-bold text-white">
-            Ausgewählte Arbeiten
-          </h2>
-          <p className="text-gray-400 max-w-md">
-            Von Landes-Websites bis zu eigenen Projekten – 
-            hier sind meine relevantesten Arbeiten.
-          </p>
-        </div>
+        <FadeIn delay={0.1}>
+          <div className="flex flex-wrap items-end justify-between gap-4 mb-16">
+            <h2 className="text-4xl font-bold text-white">
+              Ausgewählte Arbeiten
+            </h2>
+            <p className="text-gray-400 max-w-md">
+              Von Landes-Websites bis zu eigenen Projekten – 
+              hier sind meine relevantesten Arbeiten.
+            </p>
+          </div>
+        </FadeIn>
 
         {/* Projects Grid */}
         <div className="space-y-6">
           {projects.map((project, index) => (
-            <div
-              key={project.id}
-              className="group p-8 bg-white/5 border border-white/10 rounded-xl hover:border-blue-400/50 transition-all"
-            >
-              <div className="flex flex-wrap items-start justify-between gap-6">
+            <FadeIn key={project.id} delay={0.1 * index}>
+              <div className="group p-8 bg-white/5 border border-white/10 rounded-xl hover:border-blue-400/50 transition-all">
+                <div className="flex flex-wrap items-start justify-between gap-6">
 
-                {/* Left */}
-                <div className="flex-1 min-w-64">
-                  <div className="flex items-center gap-3 mb-3">
-                    <span className="text-gray-500 text-sm font-mono">
-                      {String(index + 1).padStart(2, '0')}
-                    </span>
-                    {project.featured && (
-                      <span className="text-xs px-2 py-0.5 bg-blue-400/10 text-blue-400 rounded-full">
-                        Featured
+                  {/* Left */}
+                  <div className="flex-1 min-w-64">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="text-gray-500 text-sm font-mono">
+                        {String(index + 1).padStart(2, '0')}
                       </span>
-                    )}
-                  </div>
+                      {project.featured && (
+                        <span className="text-xs px-2 py-0.5 bg-blue-400/10 text-blue-400 rounded-full">
+                          Featured
+                        </span>
+                      )}
+                    </div>
 
-                  <div className="mb-3">
-                    {project.company && (
-                      <p className="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">
-                        {project.company}
-                      </p>
-                    )}
-                    <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
                       {project.title}
                     </h3>
+
+                    <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                      {project.longDescription}
+                    </p>
+
+                    {/* Tags */}
+                    <div className="flex flex-wrap gap-2">
+                      {project.tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="text-xs px-3 py-1 bg-white/5 border border-white/10 text-gray-400 rounded-full"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
                   </div>
 
-                  <p className="text-gray-400 text-sm leading-relaxed mb-4">
-                    {project.longDescription}
-                  </p>
-
-                  {/* Tags */}
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="text-xs px-3 py-1 bg-white/5 border border-white/10 text-gray-400 rounded-full"
+                  {/* Right: Links */}
+                  <div className="flex flex-col gap-3">
+                    {project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium rounded-lg transition-all hover:scale-105 active:scale-95"
                       >
-                        {tag}
-                      </span>
-                    ))}
+                        <span>Live ansehen</span>
+                        <span>↗</span>
+                      </a>
+                    )}
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-4 py-2 border border-white/20 hover:border-white/40 text-white text-sm font-medium rounded-lg transition-all hover:scale-105 active:scale-95"
+                      >
+                        <span>GitHub</span>
+                        <span>↗</span>
+                      </a>
+                    )}
                   </div>
-                </div>
 
-                {/* Right: Links */}
-                <div className="flex flex-col gap-3">
-                  {project.liveUrl && (
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium rounded-lg transition-colors"
-                    >
-                      <span>Live ansehen</span>
-                      <span>↗</span>
-                    </a>
-                  )}
-                  {project.githubUrl && (
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 border border-white/20 hover:border-white/40 text-white text-sm font-medium rounded-lg transition-colors"
-                    >
-                      <span>GitHub</span>
-                      <span>↗</span>
-                    </a>
-                  )}
                 </div>
-
               </div>
-            </div>
+            </FadeIn>
           ))}
         </div>
       </div>

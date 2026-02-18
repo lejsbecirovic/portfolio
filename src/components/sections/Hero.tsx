@@ -1,65 +1,103 @@
+'use client'
+
+import { motion } from 'framer-motion'
+
 export default function Hero() {
   return (
     <section
-      className="min-h-screen flex items-center justify-center px-6 pt-20"
+      className="min-h-screen flex items-center justify-center px-6 pt-20 relative overflow-hidden"
       aria-label="Einleitung"
     >
-      <div className="max-w-6xl mx-auto w-full">
+      {/* Animated Gradient Blob */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-emerald-500/10 rounded-full blur-[120px] animate-pulse" />
+      
+      <div className="max-w-6xl mx-auto w-full relative z-10">
         <div className="max-w-3xl">
           
-          {/* Eyebrow */}
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-px bg-blue-400" />
-            <span className="text-blue-400 text-sm font-medium tracking-wider uppercase">
+          {/* Eyebrow - Animated */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="flex items-center gap-3 mb-6"
+          >
+            <div className="w-8 h-px bg-emerald-400" />
+            <span className="text-emerald-400 text-sm font-medium tracking-wider uppercase">
               Frontend & CMS Developer
             </span>
-          </div>
+          </motion.div>
 
-          {/* Headline */}
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          {/* Headline - Animated */}
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
+          >
             Hi, ich bin{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400">
               Lejs Becirovic
             </span>
-          </h1>
+          </motion.h1>
 
-          {/* Subtext */}
-          <p className="text-xl text-gray-400 mb-10 leading-relaxed max-w-2xl">
+          {/* Subtext - Animated */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-xl text-gray-400 mb-10 leading-relaxed max-w-2xl"
+          >
             Ich entwickle barrierefreie, moderne Webapplikationen mit Fokus auf 
             sauberen Code und außergewöhnliche User Experience.
-          </p>
+          </motion.p>
 
-          {/* CTAs */}
-          <div className="flex flex-wrap gap-4">
+          {/* CTAs - Animated */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="flex flex-wrap gap-4"
+          >
             <a
               href="#projects"
-              className="px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-medium rounded-lg transition-all hover:scale-105 active:scale-95"
+              className="group px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-medium rounded-lg transition-all hover:scale-105 active:scale-95 hover:shadow-lg hover:shadow-emerald-500/20"
             >
-              Projekte ansehen
+              <span className="flex items-center gap-2">
+                Projekte ansehen
+                <span className="group-hover:translate-x-1 transition-transform">→</span>
+              </span>
             </a>
             <a
               href="#contact"
-              className="px-8 py-4 border border-white/20 hover:border-white/40 text-white font-medium rounded-lg transition-all hover:bg-white/5"
+              className="px-8 py-4 border border-emerald-500/30 hover:border-emerald-500/60 text-white font-medium rounded-lg transition-all hover:bg-emerald-500/5"
             >
               Kontakt aufnehmen
             </a>
-          </div>
+          </motion.div>
 
-          {/* Stats */}
-          <div className="flex flex-wrap gap-12 mt-16 pt-16 border-t border-white/10">
-            <div>
-              <div className="text-3xl font-bold text-white">2+</div>
-              <div className="text-gray-400 text-sm mt-1">Jahre Erfahrung</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-white">WCAG</div>
-              <div className="text-gray-400 text-sm mt-1">2.2 Zertifiziert</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-white">10+</div>
-              <div className="text-gray-400 text-sm mt-1">Projekte</div>
-            </div>
-          </div>
+          {/* Stats - Animated with Stagger */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className="flex flex-wrap gap-12 mt-16 pt-16 border-t border-emerald-500/10"
+          >
+            {[
+              { value: '2+', label: 'Jahre Erfahrung' },
+              { value: 'WCAG', label: '2.2 Zertifiziert' },
+              { value: '10+', label: 'Projekte' }
+            ].map((stat, index) => (
+              <motion.div
+                key={stat.label}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: 0.6 + index * 0.1 }}
+              >
+                <div className="text-3xl font-bold text-emerald-400">{stat.value}</div>
+                <div className="text-gray-500 text-sm mt-1">{stat.label}</div>
+              </motion.div>
+            ))}
+          </motion.div>
 
         </div>
       </div>
