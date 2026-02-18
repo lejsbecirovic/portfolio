@@ -48,9 +48,16 @@ export default function Projects() {
                     )}
                   </div>
 
-                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
-                    {project.title}
-                  </h3>
+                  <div className="mb-3">
+                    {project.company && (
+                      <p className="text-xs text-gray-500 font-medium uppercase tracking-wide mb-2">
+                        {project.company}
+                      </p>
+                    )}
+                    <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                      {project.title}
+                    </h3>
+                  </div>
 
                   <p className="text-gray-400 text-sm leading-relaxed mb-4">
                     {project.longDescription}

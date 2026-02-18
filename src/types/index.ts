@@ -22,6 +22,7 @@ export interface Project {
   liveUrl?: string
   githubUrl?: string
   featured: boolean
+  company?: string
 }
 
 export interface Experience {
