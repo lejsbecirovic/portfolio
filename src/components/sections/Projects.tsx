@@ -14,8 +14,8 @@ export default function Projects() {
         {/* Header */}
         <FadeIn>
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-px bg-blue-400" />
-            <span className="text-blue-400 text-sm font-medium tracking-wider uppercase">
+            <div className="w-8 h-px bg-emerald-400" />
+            <span className="text-emerald-400 text-sm font-medium tracking-wider uppercase">
               Projekte
             </span>
           </div>
@@ -37,7 +37,7 @@ export default function Projects() {
         <div className="space-y-6">
           {projects.map((project, index) => (
             <FadeIn key={project.id} delay={0.1 * index}>
-              <div className="group p-8 bg-white/5 border border-white/10 rounded-xl hover:border-blue-400/50 transition-all">
+              <div className="group p-8 bg-white/5 border border-emerald-500/10 rounded-xl hover:border-emerald-400/50 transition-all">
                 <div className="flex flex-wrap items-start justify-between gap-6">
 
                   {/* Left */}
@@ -47,13 +47,13 @@ export default function Projects() {
                         {String(index + 1).padStart(2, '0')}
                       </span>
                       {project.featured && (
-                        <span className="text-xs px-2 py-0.5 bg-blue-400/10 text-blue-400 rounded-full">
+                        <span className="text-xs px-2 py-0.5 bg-emerald-400/10 text-emerald-400 rounded-full">
                           Featured
                         </span>
                       )}
                     </div>
 
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">
                       {project.title}
                     </h3>
 
@@ -66,7 +66,7 @@ export default function Projects() {
                       {project.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="text-xs px-3 py-1 bg-white/5 border border-white/10 text-gray-400 rounded-full"
+                          className="text-xs px-3 py-1 bg-white/5 border border-emerald-500/10 text-gray-400 rounded-full"
                         >
                           {tag}
                         </span>
@@ -81,7 +81,7 @@ export default function Projects() {
                         href={project.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium rounded-lg transition-all hover:scale-105 active:scale-95"
+                        className="flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-medium rounded-lg transition-all hover:scale-105 active:scale-95"
                       >
                         <span>Live ansehen</span>
                         <span>↗</span>

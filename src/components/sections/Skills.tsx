@@ -14,8 +14,8 @@ export default function Skills() {
         {/* Header */}
         <FadeIn>
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-px bg-blue-400" />
-            <span className="text-blue-400 text-sm font-medium tracking-wider uppercase">
+            <div className="w-8 h-px bg-emerald-400" />
+            <span className="text-emerald-400 text-sm font-medium tracking-wider uppercase">
               Skills
             </span>
           </div>
@@ -37,7 +37,7 @@ export default function Skills() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map((skill, index) => (
             <FadeIn key={skill.id} delay={0.1 * (index % 3)}>
-              <div className="h-full p-6 bg-white/5 border border-white/10 rounded-xl hover:border-blue-400/50 transition-all hover:-translate-y-1 group">
+              <div className="h-full p-6 bg-white/5 border border-emerald-500/10 rounded-xl hover:border-emerald-400/50 transition-all hover:-translate-y-1 group">
                 {/* Icon & Title */}
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-3xl">{skill.icon}</span>
@@ -62,7 +62,7 @@ export default function Skills() {
                         key={i}
                         className="text-xs text-gray-500 flex items-center gap-2"
                       >
-                        <span className="w-1 h-1 rounded-full bg-blue-400 flex-shrink-0" />
+                        <span className="w-1 h-1 rounded-full bg-emerald-400 flex-shrink-0" />
                         {project}
                       </li>
                     ))}
@@ -82,7 +82,7 @@ function getLevelStyle(level: string): string {
     case 'Experte':
       return 'bg-green-400/10 text-green-400'
     case 'Fortgeschritten':
-      return 'bg-blue-400/10 text-blue-400'
+      return 'bg-emerald-400/10 text-emerald-400'
     case 'Gut':
       return 'bg-yellow-400/10 text-yellow-400'
     case 'Anfänger':

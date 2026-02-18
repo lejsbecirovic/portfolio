@@ -21,7 +21,7 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="flex items-center gap-3 mb-6"
           >
-            <div className="w-8 h-px bg-emerald-400" />
+            <div className="w-6 h-px bg-emerald-400" />
             <span className="text-emerald-400 text-sm font-medium tracking-wider uppercase">
               Frontend & CMS Developer
             </span>
@@ -32,7 +32,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
+            className="text-6xl md:text-6xl font-bold text-white mb-6 leading-tight"
           >
             Hi, ich bin{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400">

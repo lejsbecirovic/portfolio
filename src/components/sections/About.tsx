@@ -13,8 +13,8 @@ export default function About() {
           <div>
             <FadeIn>
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-8 h-px bg-blue-400" />
-                <span className="text-blue-400 text-sm font-medium tracking-wider uppercase">
+                <div className="w-8 h-px bg-emerald-400" />
+                <span className="text-emerald-400 text-sm font-medium tracking-wider uppercase">
                   Über mich
                 </span>
               </div>
@@ -23,7 +23,7 @@ export default function About() {
             <FadeIn delay={0.1}>
               <h2 className="text-4xl font-bold text-white mb-6">
                 Leidenschaft für sauberen,
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">
                   {' '}barrierefreien Code
                 </span>
               </h2>
@@ -60,7 +60,7 @@ export default function About() {
               { icon: '🚀', title: 'Lernbereitschaft', text: 'Aktuell vertiefe ich React, TypeScript und Next.js um moderne Frontend-Architekturen vollständig zu beherrschen.' }
             ].map((card, index) => (
               <FadeIn key={card.title} delay={0.1 * index} direction="left">
-                <div className="p-6 bg-white/5 border border-white/10 rounded-xl hover:border-blue-400/50 transition-colors">
+                <div className="p-6 bg-white/5 border border-emerald-500/10 rounded-xl hover:border-emerald-400/50 transition-colors">
                   <div className="text-2xl mb-3">{card.icon}</div>
                   <h3 className="text-white font-semibold mb-2">{card.title}</h3>
                   <p className="text-gray-400 text-sm">{card.text}</p>

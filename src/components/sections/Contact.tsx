@@ -14,11 +14,11 @@ export default function Contact() {
           {/* Header */}
           <FadeIn>
             <div className="flex items-center justify-center gap-3 mb-6">
-              <div className="w-8 h-px bg-blue-400" />
-              <span className="text-blue-400 text-sm font-medium tracking-wider uppercase">
+              <div className="w-8 h-px bg-emerald-400" />
+              <span className="text-emerald-400 text-sm font-medium tracking-wider uppercase">
                 Kontakt
               </span>
-              <div className="w-8 h-px bg-blue-400" />
+              <div className="w-8 h-px bg-emerald-400" />
             </div>
           </FadeIn>
 
@@ -40,7 +40,7 @@ export default function Contact() {
           <FadeIn delay={0.3}>
             <a
               href="mailto:deine@email.com"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-medium rounded-lg transition-all hover:scale-105 active:scale-95 mb-16"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-medium rounded-lg transition-all hover:scale-105 active:scale-95 mb-16"
             >
               <span>Email schreiben</span>
               <span>→</span>
@@ -49,7 +49,7 @@ export default function Contact() {
 
           {/* Social Links */}
           <FadeIn delay={0.4}>
-            <div className="flex items-center justify-center gap-6 pt-8 border-t border-white/10">
+            <div className="flex items-center justify-center gap-6 pt-8 border-t border-emerald-500/10">
               <a
                 href="https://github.com/lejsbecirovic"
                 target="_blank"
