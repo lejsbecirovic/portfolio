@@ -32,7 +32,7 @@ export default function About() {
             <FadeIn delay={0.2}>
               <div className="space-y-4 text-gray-400 leading-relaxed">
                 <p>
-                  Als Frontend & CMS Developer mit 2 Jahren Erfahrung habe ich mich 
+                  Als Frontend & CMS Developer mit 3 Jahren Erfahrung habe ich mich 
                   auf die Entwicklung barrierefreier, moderner Webapplikationen spezialisiert. 
                   Mein größtes Projekt war die Frontend-Umsetzung der offiziellen 
                   Website des Landes Salzburg – vollständig nach WCAG 2.2 Standard.
