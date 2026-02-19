@@ -51,7 +51,7 @@ export const skills: Skill[] = [
   {
     id: 5,
     title: "WordPress",
-    description: "Theme-Entwicklung, Custom Plugins und Shortcode-Entwicklung",
+    description: "Produktive Themes entwickelt, Custom Post Types & ACF Integration, Performance-Optimierung (PageSpeed 95+)",
     level: "Gut",
     icon: "📝",
     projects: [

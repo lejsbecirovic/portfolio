@@ -42,7 +42,7 @@ export default function Navbar() {
           href="#"
           className="text-xl font-bold text-white hover:text-emerald-400 transition-colors"
         >
-          DN<span className="text-emerald-400">.</span>
+          LB<span className="text-emerald-400">.</span>
         </a>
 
         {/* Desktop Links */}
