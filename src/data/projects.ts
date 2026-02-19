@@ -17,7 +17,7 @@ export const projects: Project[] = [
     description: "Persönliche Portfolio-Website mit React, Next.js und TypeScript",
     longDescription: "Moderne Portfolio-Website gebaut mit Next.js, TypeScript und Tailwind CSS. Fokus auf Performance, Accessibility und sauberem Code.",
     tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    githubUrl: "https://github.com/deinname/portfolio",
+    githubUrl: "https://github.com/lejsbecirovic/portfolio",
     featured: true
   },
   {
@@ -26,7 +26,7 @@ export const projects: Project[] = [
     description: "Barrierefreie React Komponenten nach WCAG 2.2",
     longDescription: "Eine Sammlung wiederverwendbarer, vollständig barrierefreier React-Komponenten. Jede Komponente ist nach WCAG 2.2 getestet und dokumentiert.",
     tags: ["React", "TypeScript", "Accessibility", "Storybook"],
-    githubUrl: "https://github.com/deinname/component-library",
+    githubUrl: "https://github.com/lejsbecirovic",
     featured: true
   }
 ]

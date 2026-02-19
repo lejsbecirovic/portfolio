@@ -14,7 +14,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto w-full relative z-10">
         <div className="max-w-3xl">
           
-          {/* Eyebrow - Animated */}
+          {/* Eyebrow */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -27,7 +27,7 @@ export default function Hero() {
             </span>
           </motion.div>
 
-          {/* Headline - Animated */}
+          {/* Headline */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -40,7 +40,7 @@ export default function Hero() {
             </span>
           </motion.h1>
 
-          {/* Subtext - Animated */}
+          {/* Subtext */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ export default function Hero() {
             sauberen Code und außergewöhnliche User Experience.
           </motion.p>
 
-          {/* CTAs - Animated */}
+          {/* CTAs */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -75,7 +75,7 @@ export default function Hero() {
             </a>
           </motion.div>
 
-          {/* Stats - Animated with Stagger */}
+          {/* Stats */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -83,8 +83,7 @@ export default function Hero() {
             className="flex flex-wrap gap-12 mt-16 pt-16 border-t border-emerald-500/10"
           >
             {[
-              { value: '2+', label: 'Jahre Erfahrung' },
-              { value: 'WCAG', label: '2.2 Zertifiziert' },
+              { value: '3+', label: 'Jahre Erfahrung' },
               { value: '10+', label: 'Projekte' }
             ].map((stat, index) => (
               <motion.div

@@ -27,7 +27,7 @@ export default function Skills() {
               Was ich mitbringe
             </h2>
             <p className="text-gray-400 max-w-md">
-              2 Jahre Berufserfahrung, kontinuierliches Lernen und 
+              3 Jahre Berufserfahrung, kontinuierliches Lernen und 
               ein starker Fokus auf Code-Qualität.
             </p>
           </div>

@@ -39,7 +39,7 @@ export default function Contact() {
           {/* CTA */}
           <FadeIn delay={0.3}>
             <a
-              href="mailto:deine@email.com"
+              href="mailto:lejs.becirovic@gmail.com"
               className="inline-flex items-center gap-3 px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-medium rounded-lg transition-all hover:scale-105 active:scale-95 mb-16"
             >
               <span>Email schreiben</span>
