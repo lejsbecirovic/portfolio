@@ -23,6 +23,7 @@ export interface Project {
   githubUrl?: string
   featured: boolean
   company?: string
+  shown?: boolean
 }
 
 export interface Experience {
