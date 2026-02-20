@@ -35,7 +35,7 @@ export default function Projects() {
 
         {/* Projects Grid */}
         <div className="space-y-6">
-          {projects.map((project, index) => (
+          {projects.filter(project => project.shown !== false).map((project, index) => (
             <FadeIn key={project.id} delay={0.1 * index}>
               <div className="group p-8 bg-white/5 border border-emerald-500/10 rounded-xl hover:border-emerald-400/50 transition-all">
                 <div className="flex flex-wrap items-start justify-between gap-6">
@@ -75,13 +75,13 @@ export default function Projects() {
                   </div>
 
                   {/* Right: Links */}
-                  <div className="flex flex-col gap-3">
+                  <div className="flex flex-col gap-3 ml-auto items-end">
                     {project.liveUrl && (
                       <a
                         href={project.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-medium rounded-lg transition-all hover:scale-105 active:scale-95"
+                        className="flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-medium rounded-lg transition-all hover:scale-105 active:scale-95 w-fit"
                       >
                         <span>Live ansehen</span>
                         <span>↗</span>
@@ -92,7 +92,7 @@ export default function Projects() {
                         href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 border border-white/20 hover:border-white/40 text-white text-sm font-medium rounded-lg transition-all hover:scale-105 active:scale-95"
+                        className="flex items-center gap-2 px-4 py-2 border border-white/20 hover:border-white/40 text-white text-sm font-medium rounded-lg transition-all hover:scale-105 active:scale-95 w-fit"
                       >
                         <span>GitHub</span>
                         <span>↗</span>
