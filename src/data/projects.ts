@@ -33,21 +33,11 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    title: "Accessible Component Library",
-    description: "Barrierefreie React Komponenten nach WCAG 2.2",
-    longDescription: "Eine Sammlung wiederverwendbarer, vollständig barrierefreier React-Komponenten. Jede Komponente ist nach WCAG 2.2 getestet und dokumentiert.",
-    tags: ["React", "TypeScript", "Accessibility", "Storybook"],
-    githubUrl: "https://github.com/lejsbecirovic",
-    featured: true,
-    shown: false
-  },
-  {
-    id: 5,
     title: "Diverse CMS-Projekte",
     description: "12+ WordPress & Typo3 Websites für verschiedene Kunden",
     longDescription: "Umsetzung von Landingpages, Corporate Websites, E-Commerce-Lösungen und Custom Themes. Von kleinen 5-Seiten-Sites bis zu größeren Projekten mit WooCommerce-Integration. Eigenverantwortliche Entwicklung, Wartung und Weiterentwicklung.",
     tags: ["WordPress", "Typo3", "E-Commerce", "Custom Themes", "Maintenance", "Performance Optimization", "SEO"],
     featured: false,
     shown: true
-  }
+  },
 ]

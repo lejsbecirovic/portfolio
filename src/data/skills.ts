@@ -71,5 +71,29 @@ export const skills: Skill[] = [
       "Accessibility Audits",
       "ARIA Implementation"
     ]
+  },
+  {
+    id: 7,
+    title: "Git & Koordination",
+    description: "Versionskontrolle mit Git, lokale Entwicklung mit ddev. Erfahrung in der Koordination externer Entwickler.",
+    level: "Gut",
+    icon: "🔀",
+    projects: [
+      "Eigenverantwortliche Code-Verwaltung",
+      "Task-Delegation an externe Entwickler",
+      "ddev für lokale Typo3/WordPress-Entwicklung"
+    ]
+  },
+  {
+    id: 8,
+    title: "SEO & Optimierung",
+    description: "Technische SEO-Optimierung, Performance-Verbesserung und Analytics-Integration.",
+    level: "Gut",
+    icon: "📈",
+    projects: [
+      "On-Page SEO für CMS-Projekte",
+      "Meta-Tags & Schema.org Implementation",
+      "Google Analytics & Search Console Setup"
+    ]
   }
 ]
