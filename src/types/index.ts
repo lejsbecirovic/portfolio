@@ -1,7 +1,8 @@
 export type SkillLevel = 
   | 'Gut' 
-  | 'Fortgeschritten' 
-  | 'Experte'
+  | 'Sicher' 
+  | 'Gut'
+  | 'Lernend'
 
 export interface Skill {
   id: number

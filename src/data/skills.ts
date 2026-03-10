@@ -5,7 +5,7 @@ export const skills: Skill[] = [
     id: 1,
     title: "HTML & CSS",
     description: "Semantisches HTML und modernes CSS inkl. Custom Properties, Grid & Flexbox",
-    level: "Fortgeschritten",
+    level: "Sicher",
     icon: "🎨",
     projects: [
       "Salzburg Landeswebseite",
@@ -17,7 +17,7 @@ export const skills: Skill[] = [
     id: 2,
     title: "JavaScript",
     description: "Modern ES6+, DOM Manipulation, Async/Await und API Integration",
-    level: "Gut",
+    level: "Sicher",
     icon: "⚡",
     projects: [
       "Interaktive Komponenten",
@@ -28,43 +28,32 @@ export const skills: Skill[] = [
   {
     id: 3,
     title: "React & TypeScript",
-    description: "Component-basierte Entwicklung mit Hooks und Type-Safety",
-    level: "Gut",
+    description: "Komponenten, Hooks und TypeScript. Über dieses Portfolio und kleine Projekte lerne ich.",
+    level: "Lernend",
     icon: "⚛️",
     projects: [
-      "Portfolio Website (dieses Projekt)",
-      "Component Library (in Arbeit)"
+      "Portfolio Website",
+      "Kanban Board App",
+      "Riftbound Deck Builder (Riot API Integration)"
     ]
   },
   {
     id: 4,
-    title: "Typo3",
-    description: "Frontend-Integration, Fluid Templates und Content Element Entwicklung",
-    level: "Fortgeschritten",
-    icon: "🔧",
-    projects: [
-      "Salzburg Landeswebseite (Großprojekt)",
-      "Custom Content Elements",
-      "Fluid Template Engine"
-    ]
-  },
-  {
-    id: 5,
-    title: "WordPress",
-    description: "Produktive Themes entwickelt, Custom Post Types & ACF Integration, Performance-Optimierung (PageSpeed 95+)",
-    level: "Gut",
+    title: "Typo3 & WordPress",
+    description: "3 Jahre Production. Fluid Templates, Plugins, Extensions.",
+    level: "Sicher",
     icon: "📝",
     projects: [
-      "Custom Plugins",
-      "Shortcode Entwicklung",
-      "Theme Customization"
+      "Salzburg Landeswebseite (Typo3)",
+      "Theme Customization",
+      "Plugin & Extension Development"
     ]
   },
   {
     id: 6,
     title: "Accessibility (WCAG)",
     description: "Barrierefreie Webentwicklung nach WCAG 2.2 Standards",
-    level: "Fortgeschritten",
+    level: "Gut",
     icon: "♿",
     projects: [
       "Salzburg Landeswebseite (WCAG 2.2)",
@@ -75,25 +64,13 @@ export const skills: Skill[] = [
   {
     id: 7,
     title: "Git & Koordination",
-    description: "Versionskontrolle mit Git, lokale Entwicklung mit ddev. Erfahrung in der Koordination externer Entwickler.",
-    level: "Gut",
+    description: "Versionskontrolle mit Git. Erfahrung in der Koordination externer Entwickler.",
+    level: "Sicher",
     icon: "🔀",
     projects: [
       "Eigenverantwortliche Code-Verwaltung",
       "Task-Delegation an externe Entwickler",
       "ddev für lokale Typo3/WordPress-Entwicklung"
-    ]
-  },
-  {
-    id: 8,
-    title: "SEO & Optimierung",
-    description: "Technische SEO-Optimierung, Performance-Verbesserung und Analytics-Integration.",
-    level: "Gut",
-    icon: "📈",
-    projects: [
-      "On-Page SEO für CMS-Projekte",
-      "Meta-Tags & Schema.org Implementation",
-      "Google Analytics & Search Console Setup"
     ]
   }
 ]

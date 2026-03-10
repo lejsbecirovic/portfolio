@@ -86,6 +86,8 @@ function getLevelStyle(level: string): string {
       return 'bg-emerald-400/10 text-emerald-400'
     case 'Gut':
       return 'bg-yellow-400/10 text-yellow-400'
+    case 'Lernend':
+      return 'bg-sky-400/10 text-sky-400'
     case 'Anfänger':
       return 'bg-emerald-300/10 text-emerald-300'
     default:
