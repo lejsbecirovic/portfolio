@@ -5,7 +5,7 @@ export const projects: Project[] = [
     id: 1,
     title: "Land Salzburg Website",
     description: "Barrierefreie Landes-Website mit WCAG 2.2 Konformität",
-    longDescription: "Mitarbeit im Frontend-Team an der Website des Landes Salzburg (IXSOL GmbH). Meine Aufgaben: Typo3 Fluid Templates, Komponenten und Accessibility (WCAG 2.2) – in Abstimmung mit Design und anderen Entwicklern.",
+    longDescription: "Mitarbeit im Frontend-Team an der Website des Landes Salzburg (als Angestellter bei IXSOL GmbH). Meine Aufgaben: Typo3 Fluid Templates, Komponenten und Accessibility (WCAG 2.2) – in Abstimmung mit Design und anderen Entwicklern.",
     tags: ["Typo3", "HTML/CSS", "WCAG 2.2", "Accessibility", "Fluid Templates"],
     liveUrl: "https://www.salzburg.gv.at",
     featured: true,

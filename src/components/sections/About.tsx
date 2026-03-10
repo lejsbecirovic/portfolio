@@ -33,14 +33,16 @@ export default function About() {
             <FadeIn delay={0.2}>
               <div className="space-y-4 text-slate-300 leading-relaxed">
                 <p>
-                  Nach meiner HTL habe ich 3 Jahre als Webentwickler mit Typo3 und WordPress gearbeitet –
-                  zuerst eher chaotisch, später in klareren Strukturen. In dieser Zeit habe ich vor allem
-                  sauberes Markup, Barrierefreiheit und CMS-Templates gelernt.
+                  Nach meinem Abschluss an der HTL (Informatik) habe ich 3 Jahre als Webentwickler mit Typo3 und WordPress gearbeitet – 
+                  zuerst eher chaotisch, später in klareren Strukturen.
+                </p>
+                <p>
+                  Am meisten gemacht habe ich Frontend (Templates, Markup, Styling), Barrierefreiheit (WCAG) sowie Plugins, 
+                  Extensions und Shortcodes – je nach Projekt in Typo3 oder WordPress.
                 </p>
                 <p>
                   Mein größtes Projekt war die Mitarbeit an der Website des Landes Salzburg (Typo3, WCAG 2.2).
-                  Dort war ich im Frontend-Team für Templates, Komponenten und Accessibility-Details zuständig,
-                  nicht für das komplette System.
+                  Dort war ich im Frontend-Team für Templates, Komponenten und Accessibility-Details zuständig.
                 </p>
                 <p>
                   React, TypeScript und Next.js nutze ich seit ein paar Monaten bewusst zum Lernen –
