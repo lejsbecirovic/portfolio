@@ -42,7 +42,7 @@ export default function Hero() {
           >
             <div className="w-6 h-px bg-emerald-400" />
             <span className="text-emerald-400 text-sm font-medium tracking-wider uppercase">
-              Frontend & CMS Developer
+              Web-Entwickler mit CMS-Erfahrung · Auf dem Weg ins moderne Frontend
             </span>
           </motion.div>
 
@@ -64,8 +64,8 @@ export default function Hero() {
             suppressHydrationWarning
             className="text-xl text-white mb-10 leading-relaxed max-w-2xl"
           >
-            Ich entwickle barrierefreie, moderne Webapplikationen mit Fokus auf 
-            sauberen Code und außergewöhnliche User Experience.
+            Seit 3 Jahren entwickle ich Websites mit Typo3 und WordPress – mit Fokus auf sauberen Code und Barrierefreiheit.
+            Jetzt lerne ich React und Next.js und suche ein Team, in dem ich das richtig aufbauen kann.
           </motion.p>
 
           {/* CTAs */}
