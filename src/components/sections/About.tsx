@@ -33,21 +33,19 @@ export default function About() {
             <FadeIn delay={0.2}>
               <div className="space-y-4 text-slate-300 leading-relaxed">
                 <p>
-                  Als Frontend & CMS Developer mit 3 Jahren Erfahrung habe ich mich 
-                  auf die Entwicklung barrierefreier, moderner Webapplikationen spezialisiert. 
-                  Mein größtes Projekt war die Frontend-Umsetzung der offiziellen 
-                  Website des Landes Salzburg – vollständig nach WCAG 2.2 Standard.
+                  Nach meiner HTL habe ich 3 Jahre als Webentwickler mit Typo3 und WordPress gearbeitet –
+                  zuerst eher chaotisch, später in klareren Strukturen. In dieser Zeit habe ich vor allem
+                  sauberes Markup, Barrierefreiheit und CMS-Templates gelernt.
                 </p>
                 <p>
-                  Ich arbeite am liebsten in strukturierten Teams, wo ich mich 
-                  vollständig auf die Qualität des Codes konzentrieren kann. 
-                  Meine Stärke liegt in der präzisen Umsetzung von Designs und 
-                  der Sicherstellung von Accessibility für alle Nutzer.
+                  Mein größtes Projekt war die Mitarbeit an der Website des Landes Salzburg (Typo3, WCAG 2.2).
+                  Dort war ich im Frontend-Team für Templates, Komponenten und Accessibility-Details zuständig,
+                  nicht für das komplette System.
                 </p>
                 <p>
-                  Aktuell erweitere ich mein Skillset gezielt mit React, TypeScript 
-                  und modernen Frontend-Frameworks um mich als vollwertiger 
-                  Frontend Developer zu etablieren.
+                  React, TypeScript und Next.js nutze ich seit ein paar Monaten bewusst zum Lernen –
+                  dieses Portfolio ist Teil davon. Ich suche ein Team, in dem ich mein CMS-Wissen einbringen
+                  und modernes Frontend Schritt für Schritt aufbauen kann.
                 </p>
               </div>
             </FadeIn>
