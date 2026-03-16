@@ -1,6 +1,6 @@
 # Portfolio - Lejs Becirovic
 
-Frontend & CMS Developer spezialisiert auf barrierefreie Webentwicklung.
+CMS Developer mit Fullstack-Ambitionen.
 
 ## 🚀 Tech Stack
 

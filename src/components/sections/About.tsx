@@ -56,9 +56,21 @@ export default function About() {
           {/* Right: Info Cards with Stagger */}
           <div className="space-y-4">
             {[
-              { icon: '🎯', title: 'Spezialisierung', text: 'Frontend Development mit Fokus auf Accessibility, moderne CSS-Architekturen und CMS-Integration.' },
-              { icon: '♿', title: 'Accessibility First', text: 'WCAG 2.2 Expertise aus der Praxis – nicht nur Theorie. Barrierefreiheit ist für mich kein Afterthought, sondern Teil des Entwicklungsprozesses von Anfang an.' },
-              { icon: '🚀', title: 'Lernbereitschaft', text: 'Aktuell vertiefe ich React, TypeScript und Next.js um moderne Frontend-Architekturen vollständig zu beherrschen.' }
+              { 
+                icon: '🎯', 
+                title: 'CMS & Frontend', 
+                text: 'Typo3 und WordPress im Alltag: Templates, Markup, Styling und die kleinen Details im Frontend, die am Ende das Gesamtbild ausmachen.' 
+              },
+              { 
+                icon: '♿', 
+                title: 'Accessibility aus der Praxis', 
+                text: 'WCAG 2.2 kenne ich nicht nur aus Artikeln: ich habe echte Projekte barriereärmer gemacht – mit Fokus auf Struktur, Kontrast und sinnvolle ARIA-Einsätze.' 
+              },
+              { 
+                icon: '🚀', 
+                title: 'Lernfokus Modern Stack', 
+                text: 'React, TypeScript und Next.js lerne ich gerade bewusst dazu. Dieses Portfolio und kleine Side Projects sind mein Weg, modernes Frontend Schritt für Schritt aufzubauen.' 
+              }
             ].map((card, index) => (
               <FadeIn key={card.title} delay={0.1 * index} direction="left">
                 <div className="p-6 bg-white/5 border border-emerald-500/10 rounded-xl hover:border-emerald-400/50 transition-colors">
